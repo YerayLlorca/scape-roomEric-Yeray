@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+html {
+    font-size: 1.4vw;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* pagina web */
+
+.column-fot {
+    width: 50%;
+    float: left;
+}
+
+.padding-s {
+    padding-left: 15%;
+    padding-top: 3%;
+}
+
+#NAPOLIescudo {
+    background-image: url("../img/napoli.png");
+    height: 20vw;
+    width: 20vw;
+    background-size: cover;
+    background-position: center;
+    border: solid 3px black;
+}
+
+#BVBescudo {
+    background-image: url("../img/bvb.png");
+    height: 20vw;
+    width: 20vw;
+    background-size: cover;
+    background-position: center;
+    border: solid 3px black;
+}
+
+#TOTTENHAMescudo {
+    background-image: url("../img/Tottenham.png");
+    height: 20vw;
+    width: 20vw;
+    background-size: cover;
+    background-position: center;
+    border: solid 3px black;
+}
+
+#AJAXescudo {
+    background-image: url("../img/ajax.png");
+    height: 20vw;
+    width: 20vw;
+    background-size: cover;
+    background-position: center;
+    border: solid 3px black;
+}
+
+#header {
+    text-align: center;
+    padding-top: 0.5vw;
+}
+
+.fondo-principal {
+    background-image: url("../img/fondo\ negro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.btnjugar {
+    width: 30vw;
+    height: 2.5vw;
+    border-radius: 1vw;
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+.btnjugar:hover {
+    color: red;
+    background-color: rgb(255, 181, 181);
+}
+
+.validar {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 140vw;
+}
+
+@media only screen and (max-width: 600px) {
+    /* reglas */
+    .padding-s {
+        padding-left: 8%;
+        padding-right: 10%;
+        padding-top: 3%;
+    }
+    #header h1 {
+        padding-top: 2vw;
+        font-size: 6vw;
+        height: 20vw;
+    }
+    #header h2 {
+        font-size: 4vw;
+        height: 15vw;
+    }
+    #NAPOLIescudo,
+    #BVBescudo,
+    #TOTTENHAMescudo,
+    #AJAXescudo {
+        height: 35vw;
+        width: 35vw;
+    }
+    .btnjugar {
+        font-size: 4vw;
+        width: 50vw;
+        height: 10vw;
+    }
+    label {
+        font-size: 2.8vw;
+    }
+}

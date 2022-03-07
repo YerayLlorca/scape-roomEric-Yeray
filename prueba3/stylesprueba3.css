@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+html {
+    font-size: 1.4vw;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: 'Akaya Telivigala', cursive;
+    background-image: url("../img/fondo\ negro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* pagina web */
+
+#header {
+    text-align: center;
+    padding-top: 0.5vw;
+    color: white;
+}
+
+.centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    padding-top: 3vw;
+    width: 60vw;
+    padding-bottom: 3vw;
+}
+
+#section-1 {
+    padding-left: 20vw;
+}
+
+.btnjugar {
+    width: 15vw;
+    height: 2.5vw;
+    border-radius: 1vw;
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+.btnjugar:hover {
+    color: red;
+    background-color: rgb(255, 181, 181);
+}
+
+.validar {
+    padding: 7vw;
+}
+
+.column-50 {
+    width: 47%;
+    float: left;
+}
+
+.imgfurbo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    padding-left: 15%;
+}
+
+.btnf {
+    width: 15vw;
+    height: 2.5vw;
+    border-radius: 1vw;
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+.btnf:hover {
+    color: red;
+    background-color: rgb(255, 181, 181);
+}
+
+#section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* reglas */
+    #header h1 {
+        padding-top: 2vw;
+        font-size: 6vw;
+        height: 20vw;
+    }
+    #header h2 {
+        font-size: 4vw;
+        height: 15vw;
+    }
+    img {
+        width: 90%;
+        padding-bottom: 10vw;
+    }
+    .btnjugar {
+        font-size: 4vw;
+        width: 30vw;
+        height: 10vw;
+    }
+    #section-1 {
+        padding-left: 3%;
+    }
+    .column-50 {
+        width: 100%;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    label {
+        font-size: 2.5vw;
+    }
+    .imgfurbo {
+        width: 85vw;
+        height: 55vw;
+    }
+    .btnf {
+        font-size: 4vw;
+        width: 30vw;
+        height: 10vw;
+    }
+}
